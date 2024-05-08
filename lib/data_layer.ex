@@ -406,7 +406,7 @@ defmodule AshSqlite.DataLayer do
 
   def can?(_, :boolean_filter), do: true
 
-  def can?(_, {:aggregate, _type}), do: false
+  def can?(_, {:aggregate, _type}), do: true
 
   def can?(_, :aggregate_filter), do: false
   def can?(_, :aggregate_sort), do: false
